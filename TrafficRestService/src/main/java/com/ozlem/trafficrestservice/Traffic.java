@@ -3,7 +3,7 @@ package com.ozlem.trafficrestservice;
 import com.opencsv.bean.CsvBindByName;
 
 public class Traffic {
-	private int date;
+	private String date;
     @CsvBindByName
     private int ParkAndCampus;
     @CsvBindByName
@@ -25,7 +25,7 @@ public class Traffic {
     @CsvBindByName
     private int WallnutAndWylie;
     
-    public Traffic(int date, int ParkAndCampus, int SeventhUnderpass,int SeventhUnderpassPedestrians
+    public Traffic(String date, int ParkAndCampus, int SeventhUnderpass,int SeventhUnderpassPedestrians
     		, int SeventhUnderpassCyclists, int BlineConventionCntr, int Pedestrians, int Cyclists, int JordanAndSeventh,
     		int NCollegeAndRR, int WallnutAndWylie ) {
     	
@@ -43,11 +43,11 @@ public class Traffic {
 
     }
     
-    public int getDate() {
+    public String getDate() {
         return date;
     }
     
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
     

@@ -38,10 +38,10 @@ public class TrafficService implements ITrafficService {
             
             while ((nextLine = reader.readNext()) != null) {
 
-            	Traffic newTraffic = new Traffic(Integer.valueOf(nextLine[1]), Integer.valueOf(nextLine[2]),
+            	Traffic newTraffic = new Traffic(String.valueOf(nextLine[0]), Integer.valueOf(nextLine[1]), Integer.valueOf(nextLine[2]),
             			Integer.valueOf(nextLine[3]),Integer.valueOf(nextLine[4]),Integer.valueOf(nextLine[5])
             			,Integer.valueOf(nextLine[6]), Integer.valueOf(nextLine[7]), Integer.valueOf(nextLine[8])
-            			, Integer.valueOf(nextLine[9]), Integer.valueOf(nextLine[10]), Integer.valueOf(nextLine[1]));
+            			, Integer.valueOf(nextLine[9]), Integer.valueOf(nextLine[10]));
             	Traffics.add(newTraffic);
             }
             /* 
